@@ -25,6 +25,16 @@ input[type=checkbox] {
     color: #00bf00;
 }
 
+.name {
+    color: #00bf00;
+}
+
+.svislitko {
+    color: #333;    
+    position: relative;
+    top: -2px;
+}
+
 /* SLIDE THREE */
 .slideThree {
 	width: 160px;

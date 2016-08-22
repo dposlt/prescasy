@@ -14,7 +14,7 @@
     <a href="{{ url_for('index') }}">   
      <img src="/static/images/company_logo.png" class="img-responsive" alt="Moneta Logo">
     </a> 
-    <h3 class="navbar-text navbar-right text-primary" style="margin-top: -45px">PŘESČASY</h3>    
+    <h3 class="navbar-text navbar-right text-primary" style="margin-top: -45px"><span class="name">ES</span><span class="svislitko">|</span>PŘESČASY</h3>    
   </div>
   
   {% block body %}
