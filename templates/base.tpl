@@ -12,7 +12,7 @@
   <div class="jumbotron">
     
     <a href="{{ url_for('index') }}">   
-     <img src="/static/images/moneta_logo.png" class="img-responsive" alt="Moneta Logo">
+     <img src="/static/images/company_logo.png" class="img-responsive" alt="Moneta Logo">
     </a> 
     <h3 class="navbar-text navbar-right text-primary" style="margin-top: -45px">PŘESČASY</h3>    
   </div>
