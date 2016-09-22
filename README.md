@@ -1,14 +1,19 @@
 # === PRESCASY ===
 
-Micro sites pro ukladani a evidenci prescasu
+Micro sites for registry overtime
+
+Used for small campany
 
 -- python3.4+
 
 -- flask
 
--- db / sqlite3
+-- db / oracle
 
 -- bootstrap
+
+-- angular/js
+
 
 
 
