@@ -9,13 +9,16 @@ metadata = MetaData()
 
 # prepis do trid
 
-users = Table('users',metadata,
-              Column('user_id',Integer(), primary_key=True),
-              Column('username', String(15), autoincrement=True),
-              Column('password', String(25), nullable=False),
-              Column('created_on', DateTime(),default=datetime.now())
-              )
-
+class sqlData:
+    def createTable(self, tableName,*tableColumn, typeColumn):
+        tableName = Table(tableName, metadata,
+                      Column('id',Integer(), primary_key=True),
+                        for i in tableColumn:
+                            Column(i, typeColumn, )
+                      Column('username', String(15), autoincrement=True),
+                      Column('password', String(25), nullable=False),
+                      Column('created_on', DateTime(),default=datetime.now())
+                      )
 
 engine = create_engine('sqlite:///:memory:')
 metadata.create_all(engine)
