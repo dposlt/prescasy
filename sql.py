@@ -7,6 +7,8 @@ from sqlalchemy import (MetaData,Table,Column,Integer, Numeric, String, DateTime
 
 metadata = MetaData()
 
+# prepis do trid
+
 users = Table('users',metadata,
               Column('user_id',Integer(), primary_key=True),
               Column('username', String(15), autoincrement=True),
