@@ -1,11 +1,12 @@
 #ingonovat adresare
 
 bin/
-include/
-lib/
+Include/
+Lib/
 __pycache__
 venv
 .idea
 .vscode
 source
 pip-selfcheck.json
+Scripts
