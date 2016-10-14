@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-
 import date_month
 
 app = Flask(__name__)

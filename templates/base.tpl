@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" />
  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
- <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
  <script src="{{url_for('static', filename='js/main.js')}}"></script>
- 
 </head>
 <body>
 
@@ -23,17 +20,17 @@
   {% block body %}
   <!-- actual month -->
   <div class="jumbotron">
-    <h3 class="text-center text-primary">{{month}}</3>
-    {{database}}
+  <h2 class="text-center text-primary">{{month}}</h2>
+<!-- Slide THREE -->
+    <div class="slideThree">	
+	<input type="checkbox" value="None" id="slideThree" name="check" />
+	<label for="slideThree"></label>   
+    </div>
+  </div>
+
+
   
-
   {% endblock %}
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="static/js/bootstrap.js"></script>
-
 </body>
 
 </html>
