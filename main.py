@@ -9,7 +9,13 @@ def index():
     month = date_month.date.ShowMonth()
     return render_template('base.tpl',month = month)
     
-    
+
+@app.route('/db')
+def db():
+    user = 'admin'
+    return render_template('db.tpl',user=user)
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.tpl'), 404
