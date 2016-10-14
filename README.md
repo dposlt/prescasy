@@ -8,6 +8,6 @@
 
  - bootstrap
 
- - angular
+ - sqlalchemy
 
  - db(oracle/sqlite3)
