@@ -25,8 +25,7 @@ class parser:
     
     def userPass():
         userpass = parser.configdb()
-        userpass = userpass['database']['pass' \
-                                        '']
+        userpass = userpass['database']['pass']
         return userpass
 
 
