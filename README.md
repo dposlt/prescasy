@@ -2,7 +2,7 @@
 
  INSTRUCTIONS
 
- - pyhon3.4
+ - pyhon3.5
  
  - flask
 
@@ -10,4 +10,6 @@
 
  - sqlalchemy
 
- - db(oracle/sqlite3)
+ - db(oracle/postgres)
+
+ - configparser
