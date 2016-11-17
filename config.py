@@ -1,10 +1,38 @@
 import configparser
 
-Config = configparser.ConfigParser()
 
-Config.read('config.ini')
+class parser:
 
-print(Config['database']['host'])
-print(Config['database']['db'])
-print(Config['database']['user'])
-print(Config['database']['pass'])
+    def configdb():
+        Config = configparser.ConfigParser()
+        Config.read('config.ini')
+        return Config
+
+    def host():
+        host = parser.configdb()
+        host = host['database']['host']
+        return host
+    
+    def db():
+        db = parser.configdb()
+        db = db['database']['db']
+        return db
+    
+    def user():
+        user = parser.configdb()
+        user = user['database']['user']
+        return user
+    
+    def userPass():
+        userpass = parser.configdb()
+        userpass = userpass['database']['pass' \
+                                        '']
+        return userpass
+
+
+#unit test
+print(parser.host())
+print(parser.db())
+print(parser.user())
+print(parser.userPass())
+
