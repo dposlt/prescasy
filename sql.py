@@ -1,11 +1,13 @@
-
-from sqlalchemy import create_engine
-
-class createSQLData:
-    def createTable(self,nameOfTable,coutColumn, *Column, typeColumn, primaryKey):
+import conf.config as configFile
 
 
+host = configFile.parser.host()
+db = configFile.parser.db()
+user = configFile.parser.user()
+dbpass = configFile.parser.userPass()
 
+def connect():
+    pass
 
 
 

@@ -1,7 +1,7 @@
 import configparser
 
 
-class parser:
+class parser():
 
     def configdb():
         Config = configparser.ConfigParser()
@@ -27,11 +27,4 @@ class parser:
         userpass = parser.configdb()
         userpass = userpass['database']['pass']
         return userpass
-
-
-#unit test
-print(parser.host())
-print(parser.db())
-print(parser.user())
-print(parser.userPass())
 
