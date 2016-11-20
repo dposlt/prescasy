@@ -1,11 +1,12 @@
-import configparser
+import configparser, working
 
 
-class parser():
+class parser:
 
     def configdb():
         Config = configparser.ConfigParser()
-        Config.read('config.ini')
+        path = working.working.wDirectory()
+        Config.read(path + 'config.ini')
         return Config
 
     def host():

@@ -1,5 +1,4 @@
-import conf.config as configFile
-
+from conf import config as configFile
 
 host = configFile.parser.host()
 db = configFile.parser.db()
@@ -9,5 +8,5 @@ dbpass = configFile.parser.userPass()
 def connect():
     pass
 
-
+print(host)
 
