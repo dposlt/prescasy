@@ -1,12 +1,23 @@
-from conf import config as configFile
+import unittest
 
-host = configFile.parser.host()
-db = configFile.parser.db()
-user = configFile.parser.user()
-dbpass = configFile.parser.userPass()
+class factory(unittest.TestCase):
 
-def connect():
-    pass
+    def test_host(self):
+        import config
+        self.assertEquals(config.parser.host(),'localhost')
 
-print(host)
+    def test_db(self):
+        import config
+        self.assertEquals(config.parser.db(),'esprescasy')
+
+    def test_user(self):
+        import config
+        self.assertEquals(config.parser.user(),'root')
+
+    def test_pass(self):
+        import config
+        self.assertEquals(config.parser.userPass(),'postgres')
+
+if __name__ == '__main__':
+    unittest.main()
 
