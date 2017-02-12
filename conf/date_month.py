@@ -1,5 +1,6 @@
 from datetime import date as dateToday
 import unittest
+from time import strftime
 
 class date(unittest.TestCase):
     
@@ -17,7 +18,9 @@ class date(unittest.TestCase):
         
         return months[index - 1].upper()
 
-
+    def getTime():
+        time = strftime('%H%M')
+        return time
 
 
 if __name__ == '__main__':
